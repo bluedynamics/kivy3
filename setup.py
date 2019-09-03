@@ -14,6 +14,7 @@ for root, subFolders, files in walk('examples'):
             examples[directory] = []
         examples[directory].append(filename)
 
+
 setup(
     name='kivy3',
     version='0.1',
@@ -22,8 +23,8 @@ setup(
     author_email='nskrypnik@gmail.com',
     include_package_data=True,
     packages=find_packages(exclude=("tests",)),
-    data_files=list(examples.items() + [
+    data_files=list(examples.items()) + [
         ['kivy3',['kivy3/default.glsl']]
-    ]),
+    ],
     requires=['kivy', ]
 )

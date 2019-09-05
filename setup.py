@@ -24,7 +24,8 @@ setup(
     include_package_data=True,
     packages=find_packages(exclude=("tests",)),
     data_files=list(examples.items()) + [
-        ['kivy3',['kivy3/default.glsl']]
+        ['kivy3',['kivy3/default.glsl']],
+        ['kivy3/loaders',['kivy3/loaders/empty.png']],
     ],
     requires=['kivy', ]
 )
